@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zKX-cK-48q">
-                                <rect key="frame" x="20" y="112" width="560" height="437"/>
+                                <rect key="frame" x="20" y="112" width="560" height="493"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7w-t2-0hr">
                                         <rect key="frame" x="0.0" y="0.0" width="84" height="21"/>
@@ -50,6 +50,10 @@
                                             <outletCollection property="gestureRecognizers" destination="2DT-Ns-ae5" appends="YES" id="wKi-TS-cGf"/>
                                         </connections>
                                     </imageView>
+                                    <view contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="Tna-lJ-3c4" customClass="RatingControl" customModule="Hello_world" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="449" width="240" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="eh3-Bs-jKb" firstAttribute="leading" secondItem="zKX-cK-48q" secondAttribute="leading" id="5M8-2C-iIV"/>
@@ -78,6 +82,24 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k8q-Nc-Z55">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEZ-fz-47S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="kz7-ZI-NgD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dz7-l8-pBA"/>
+                        <viewControllerLayoutGuide type="bottom" id="I3d-BM-Hc8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" id="Edm-q3-Cr5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1014" y="337"/>
         </scene>
     </scenes>
     <resources>
